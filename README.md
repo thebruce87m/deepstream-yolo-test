@@ -33,5 +33,17 @@ Model from here: https://github.com/rocapal/fish_detection
 ## Compile the yolo plugin
 
 ```
+./yolo_plugin_compile.sh
+```
 
+## Run the file through deepstream
+
+```
+./run-deepstream.sh
+```
+
+## Run the file through darknet
+
+```
+./run-darknet.sh
 ```
