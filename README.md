@@ -1,3 +1,8 @@
+# About
+
+NVIDIA Deepstream test to compare yoloV3 performance vs darknet.
+
+Model from here: https://github.com/rocapal/fish_detection
 
 
 # Build the docker file
