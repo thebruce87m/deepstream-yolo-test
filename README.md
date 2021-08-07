@@ -10,14 +10,14 @@ Model from here: https://github.com/rocapal/fish_detection
 
 ## PC
 
-```
+```bash
 ./scripts/build-docker-pc.sh
 ```
 
 
 # Run the docker image
 
-```
+```bash
 ./scripts/run-docker.sh
 ```
 
@@ -26,24 +26,37 @@ Model from here: https://github.com/rocapal/fish_detection
 
 ## Download the weights
 
-```
+```bash
 ./download_weights.sh
 ```
 
 ## Compile the yolo plugin
 
-```
+```bash
 ./yolo_plugin_compile.sh
+```
+
+## Create our test video
+
+```bash
+./create_video.sh
 ```
 
 ## Run the file through deepstream
 
-```
+```bash
 ./run-deepstream.sh
 ```
 
 ## Run the file through darknet
 
-```
+```bash
 ./run-darknet.sh
+```
+
+# Observe the output files (Outside of docker)
+
+```bash
+vlc ./output/darknet-out.mp4
+vlc ./output/deepstream-out.mp4
 ```

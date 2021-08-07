@@ -84,4 +84,4 @@ engine-create-func-name=NvDsInferYoloCudaEngineGet
 
 [class-attrs-all]
 nms-iou-threshold=0.3
-threshold=0.7
+threshold=0.3
