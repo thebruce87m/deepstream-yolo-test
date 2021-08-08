@@ -75,7 +75,7 @@ network-type=0
 is-classifier=0
 ## 0=Group Rectangles, 1=DBSCAN, 2=NMS, 3= DBSCAN+NMS Hybrid, 4 = None(No clustering)
 cluster-mode=2
-maintain-aspect-ratio=1
+maintain-aspect-ratio=0
 parse-bbox-func-name=NvDsInferParseCustomYoloV3
 custom-lib-path=/opt/nvidia/deepstream/deepstream-5.1/sources/objectDetector_Yolo/nvdsinfer_custom_impl_Yolo/libnvdsinfer_custom_impl_Yolo.so
 engine-create-func-name=NvDsInferYoloCudaEngineGet
