@@ -131,7 +131,13 @@ config-file=config_infer_primary_yoloV3.txt
 enable=1
 tracker-width=640
 tracker-height=384
-ll-lib-file=/opt/nvidia/deepstream/deepstream-5.1/lib/libnvds_mot_klt.so
+ll-lib-file=/opt/nvidia/deepstream/deepstream-6.1/lib/libnvds_nvmultiobjecttracker.so
+ll-config-file=/opt/nvidia/deepstream/deepstream-6.1/samples/configs/deepstream-app/config_tracker_NvDCF_perf.yml
+gpu-id=0
+enable-batch-process=1
+enable-past-frame=0
+display-tracking-id=1
+
 
 [tests]
 file-loop=0

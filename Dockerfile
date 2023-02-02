@@ -20,7 +20,7 @@ libgstreamer1.0-dev    \
 libgstrtspserver-1.0-dev \
 libx11-dev \
 libjson-glib-dev \
-python3-opencv \
+libopencv-dev \
 ffmpeg
 
 #
