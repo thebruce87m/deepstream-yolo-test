@@ -12,7 +12,7 @@ RUN apt install -y
 #
 # GStreamer Dependences
 #
-RUN apt install -y \
+RUN apt update && apt install -y \
 build-essential \
 wget \
 libgstreamer-plugins-base1.0-dev \
@@ -20,8 +20,12 @@ libgstreamer1.0-dev    \
 libgstrtspserver-1.0-dev \
 libx11-dev \
 libjson-glib-dev \
-libopencv-dev \
 ffmpeg
+
+
+RUN apt purge -y libavcodec-dev libavformat-dev
+
+RUN apt install -y libavcodec-dev libavformat-dev libopencv-dev
 
 #
 # Set the CUDA version for builds
